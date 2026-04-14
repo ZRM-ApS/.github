@@ -1,0 +1,23 @@
+# OS
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# IDE & Editors
+.vscode/
+.idea/
+*.swp
+*~
+*.sublime-project
+*.sublime-workspace
+
+# Claude Code (session-specific, not shared)
+.claude/settings.local.json
+.claude/todos/
+.claude/plans/
+
+# Environment & Secrets
+.env
+.env.*
+*.pem
+*.key
