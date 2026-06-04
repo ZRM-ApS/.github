@@ -9,7 +9,7 @@ We're a Copenhagen-based IT consulting firm helping businesses across 10+ countr
 - Custom CRM & business platforms
 - AI solutions & automation
 - Websites & web applications
-- System integrations (Zoho, Salesforce, and more)
+- System integrations (Zoho, Salesforce, Claude and more)
 - Digital consulting & IT strategy
 - Server, hosting & infrastructure
 
