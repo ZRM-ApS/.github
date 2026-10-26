@@ -22,6 +22,6 @@ This is the organization-wide defaults repo for [ZRM-ApS](https://github.com/ZRM
 
 ## Editing Guidelines
 
-- When updating `CONTRIBUTING.md`, remember it applies to all 21+ repos across different languages and stacks
+- When updating `CONTRIBUTING.md`, remember it applies to all repos across different languages and stacks
 - Issue templates use YAML form syntax, not markdown
 - Test template changes by opening a new issue/PR in a repo that doesn't have its own templates
