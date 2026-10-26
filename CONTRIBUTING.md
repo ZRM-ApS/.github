@@ -46,6 +46,20 @@ Branches created by tools keep their own prefixes, such as `claude/` and `depend
 - Dots only in version numbers.
 - Short and descriptive: `feat/add-pdf-export`, not `feat/Add_PDF_Export`.
 
+## Repositories and Teams
+
+Access is granted through teams, never to individual users. Only organization owners have admin access to repositories.
+
+| Repository type | Name | Team | Access |
+|-----------------|------|------|--------|
+| ZRM internal (tools, platform, marketing, own products) | `zrm-<purpose>` | `developers` | Write |
+| Shared tooling with fixed reviewers | e.g. `zrm-plugins` | `developers` plus a maintainer team (e.g. `plugin-maintainers`) | Write / Maintain, with `CODEOWNERS` |
+| Demo and presales | `demo-<customer-or-topic>` | `developers` | Write |
+| Customer project | `<customer>-<purpose>` | A team named after the customer, nested under `developers` | Write |
+| Internal with restricted access (e.g. infrastructure, finance) | `zrm-<purpose>` | A team named after its purpose, not nested under `developers` | Write |
+
+Repository names follow the same rules as branch names: lowercase letters, digits and hyphens only.
+
 ## Commit Messages
 
 Use this format:
