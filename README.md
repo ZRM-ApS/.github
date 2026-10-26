@@ -14,7 +14,6 @@ This repository contains community health files and templates that apply across 
 | [LICENSE](LICENSE) | Default proprietary license |
 | [.github/ISSUE_TEMPLATE/](.github/ISSUE_TEMPLATE/) | Bug report and feature request forms |
 | [.github/PULL_REQUEST_TEMPLATE.md](.github/PULL_REQUEST_TEMPLATE.md) | Default pull request template |
-| [.github/FUNDING.yml](.github/FUNDING.yml) | Sponsor button linking to zrm.dk |
 
 ## How Defaults Work
 

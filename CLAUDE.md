@@ -10,7 +10,6 @@ This is the organization-wide defaults repo for [ZRM-ApS](https://github.com/ZRM
 - `LICENSE` — Default proprietary license
 - `.github/ISSUE_TEMPLATE/` — Bug report and feature request forms (YAML)
 - `.github/PULL_REQUEST_TEMPLATE.md` — Default PR checklist
-- `.github/FUNDING.yml` — Sponsor button config
 
 ## Key Rules
 
