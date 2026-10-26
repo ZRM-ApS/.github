@@ -93,7 +93,7 @@ We use AI tools (Claude Code, Cursor, Copilot, etc.) across projects. To keep co
 
 - Keep `CLAUDE.md` up to date when project conventions change — it's the AI's onboarding doc
 - Review AI-generated code with the same rigor as human-written code
-- AI-authored commits should include `Co-Authored-By` in the commit message
+- AI-authored commits must not include `Co-Authored-By` or any other AI attribution (commits, PRs, tags)
 - Don't commit AI conversation logs or session artifacts
 - When adding new shared AI config files, document their purpose in the project README
 
