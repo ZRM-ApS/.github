@@ -77,9 +77,6 @@ We use AI tools (Claude Code, Cursor, Copilot, etc.) across projects. To keep co
 |----------------|---------|
 | `CLAUDE.md` | Project-level instructions for Claude Code — conventions, architecture notes, key commands |
 | `.claude/settings.json` | Shared Claude Code permissions and tool configs |
-| `.cursorrules` | Project conventions for Cursor |
-| `.github/copilot-instructions.md` | Repository-level instructions for GitHub Copilot |
-| `.ai/` | Shared prompts, templates, or agent configs used across the team |
 
 ### Files to NOT Commit
 
