@@ -10,15 +10,41 @@ Guidelines for contributing to ZRM repositories.
 
 ## Branching
 
-| Branch | Purpose |
-|--------|---------|
-| `main` | Production-ready code. Protected — no direct pushes. |
-| `dev` | Integration branch (where applicable). |
-| `feature/<short-description>` | New features |
-| `fix/<short-description>` | Bug fixes |
-| `hotfix/<short-description>` | Urgent production fixes |
+We follow [Conventional Branch 1.1.0](https://conventionalbranch.org/), using the short prefixes that match our commit types.
 
-Keep branch names lowercase and hyphenated: `feature/add-pdf-export`, not `feature/Add_PDF_Export`.
+### Long-lived branches
+
+| Branch | Environment | Notes |
+|--------|-------------|-------|
+| `main` | Production | Always deployable. No direct pushes. |
+| `preprod` | Preprod | Only in projects with a preprod environment. |
+| `dev` | Development | Integration branch, where the project uses one. |
+
+Changes move in one direction: work branches merge into `dev`, `dev` is promoted to `preprod`, and `preprod` is promoted to `main`. Projects without `dev` or `preprod` skip that step. Promote with a pull request, never by pushing.
+
+Do not create a separate `prod` branch: `main` is production.
+
+### Work branches
+
+Format: `<type>/<description>`, or `<type>/<task-id>-<description>` when there is a task.
+
+| Prefix | Use for |
+|--------|---------|
+| `feat/` | New features |
+| `fix/` | Bug fixes |
+| `hotfix/` | Urgent production fixes. Branch from `main`, then merge back into `preprod` and `dev` |
+| `docs/` | Documentation only |
+| `chore/` | Build, tooling, dependency updates |
+| `refactor/`, `test/`, `perf/`, `ci/` | Same meaning as the commit types below |
+| `release/` | Release preparation, e.g. `release/v1.2.0` |
+
+Branches created by tools keep their own prefixes, such as `claude/` and `dependabot/`.
+
+### Naming rules
+
+- Lowercase letters `a-z`, digits `0-9` and hyphens only. No uppercase, underscores, spaces or Danish letters (æ, ø, å).
+- Dots only in version numbers.
+- Short and descriptive: `feat/add-pdf-export`, not `feat/Add_PDF_Export`.
 
 ## Commit Messages
 
